@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    
+          <div class="signUp_cont">
+            
+        <div class="heading">
+            <h1>Register</h1>
+            <div class="close">
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </div>
+        
+
+        <div class="form">
+
+            <form action="" id="formSub">
+                <input type="text" placeholder="First Name" id="userfname" class="inp" required>
+                <input type="text" placeholder="Last Name" id="userlname" class="inp" required>
+                <input type="email" placeholder="Email Address" id="useremail" class="inp" required>
+                <input type="text" placeholder="User Name" id="username" class="inp" required>
+                <input type="password" placeholder="Password" id="password" class="inp" required>
+                <input type="password" placeholder="Confirm Password" class="inp" id="confirmpassword" required>
+                <br> <label for="terms&cond" id="" class="inp cbox"><input type="checkbox" name="terms&cond"
+                        id="terms&cond" required>
+                    <p> I Agree to the </p>
+                    <p class="tc"> Term and
+                        Condition </p>
+                </label>
+
+                <button type="submit" id="btn">Sign Up</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+       
+        <h6>designed by </h6><img src="./freepik_9836712.png" alt="" width="20px" height="20px"> <span><b> &nbsp;freepik</b></span>  
+        
+
+    <script>
+        var form = document.getElementById("formSub");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            console.log("Yahoo! Form Submitted");
+            console.log("User first name: " + document.getElementById("userfname").value);
+
+            console.log("User last Name: " + document.getElementById("userlname").value);
+            console.log("User Email: " + document.getElementById("useremail").value);
+            console.log("User Name: " + document.getElementById("username").value);
+            console.log("User Password: " + document.getElementById("password").value);
+            console.log("User Confirmed Password: " + document.getElementById("confirmpassword").value);
+
+        })
+    </script>
+
+</body>
+
+</html>
